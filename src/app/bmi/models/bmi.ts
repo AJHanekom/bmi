@@ -5,9 +5,4 @@ export interface Bmi {
     weight: number;
     bmi: number;
   };
-  imperials: {
-    height: number;
-    weight: number;
-    bmi: number;
-  };
 }

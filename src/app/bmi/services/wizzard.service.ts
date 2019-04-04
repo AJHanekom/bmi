@@ -8,7 +8,6 @@ import { Bmi } from "../models/bmi";
 export class WizzardService {
   private dataSource = new BehaviorSubject<Bmi>({
     metrics: { height: 1.78, weight: 96, bmi: 30.3 },
-    imperials: { height: 1.78, weight: 96, bmi: 30.3 },
     status: "start"
   });
   data = this.dataSource.asObservable();
