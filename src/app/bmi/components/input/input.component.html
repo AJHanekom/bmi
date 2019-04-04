@@ -1,0 +1,35 @@
+<div class="section is-paddingless">
+  <div class="columns">
+    <div class="column">
+      <label for="height">Height</label>
+    </div>
+    <div class="column">
+      <input
+        name="height"
+        type="number"
+        class="input is-small"
+        [value]="1.78"
+        [step]="0.01"
+        (keyup)="changeHeight($event)"
+        (click)="changeHeight($event)"
+        pattern="\\d*"
+      />
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column">
+      <label for="weight text-align-center">Weight</label>
+    </div>
+    <div class="column ">
+      <input
+        name="weight"
+        type="number"
+        class="input is-small"
+        [value]="96"
+        (keyup)="changeWeight($event)"
+        (click)="changeWeight($event)"
+        pattern="\\d*"
+      />
+    </div>
+  </div>
+</div>
